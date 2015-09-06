@@ -1,0 +1,96 @@
+/* breakpoint: 480 px and if digital device (targeting phablets/small tablets) */
+@media screen and (min-width: 480px) {
+	/**********************************
+	* two column layout for contact page
+	************************************/
+
+	#primary {
+		width: 50%;
+		float: left;
+	}
+
+	#secondary {
+		width: 40%;
+		float: right;
+	}
+
+	/********************************************
+	* three column layout for portfolio page
+	* 15% for margins, remaining 85/3 = 28.33333
+	********************************************/
+	#gallery li {
+		width: 28.3333%;
+	}
+
+	/* resolve issues with gallery where floated captions wrap lines,
+	push other images out of the way. end each row (every 3rd child) by clearing. */
+	#gallery li:nth-child(3n) {
+		clear: right;
+	}
+
+
+	/****************************************
+	* adjusting profile picture and text for about page
+	*****************************************/
+	.profile-photo {
+		float: left;
+		margin: 0 5% 30px 0;
+	}
+
+	#box {
+		max-width: 150px;
+		padding: 0.25em 0.5em;
+		margin-left: 0px;
+   		margin-right: 0px;
+	}
+
+	#abouttext {
+		width: 60%;
+		float: right;
+	}
+}
+
+/* breakpoint: 660 px and if digital device (targeting large tablets/laptops) */
+@media screen and (min-width: 660px) {
+	/*************************
+	* header
+	**************************/
+
+	/* float nav to right and logo to left to place them on same level. */
+	nav {
+		background: none;
+		float: right;
+		font-size: 1.125em;
+		margin-right: 5%;
+		text-align: right;
+		width: 45%
+	}
+
+	/* both take up 45% width + 5% margin, so 100% */
+	#logo {
+		float: left;
+		margin-left: 5%;
+		text-align: left;
+		width: 45%
+	}
+
+	h1 {
+		font-size: 2.5em;
+	}
+
+	h2 {
+		font-size: 0.825em;
+		margin-bottom: 20px;
+	}
+
+	/* add solid border, some space between header and body*/
+	header {
+		border-bottom: 5px solid #666;
+		margin-bottom: 60px;
+	}
+
+	#abouttext {
+		width: 68%;
+		float: right;
+	}
+}
